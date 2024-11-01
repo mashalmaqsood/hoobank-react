@@ -1,0 +1,126 @@
+.benefits-section {
+  margin: 4rem 2rem;
+  gap: 3rem;
+}
+
+.benefits-section__container1__heading {
+  color: var(--color-white);
+  font-size: 35px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.benefits-section__content__text {
+  color: var(--color-white);
+  font-size: 13px;
+}
+
+.benefits-section__container1__text {
+  color: var(--color-white);
+  font-size: 13px;
+}
+
+.btn {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  padding: 10px;
+  width: 120px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.benefits-section__content {
+  color: var(--color-white);
+}
+
+.benefits-section__content__heading {
+  margin: 0;
+}
+
+.benefits-section__content__text {
+  font-size: 13px;
+}
+
+.benefits-section__container2__section2 {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.benefits-section__container2__section1 {
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.benefits-section__container2__section3 {
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .benefits-section__container1__heading {
+    font-size: 26px;
+    line-height: 54px;
+  }
+  .benefits-section__content__text {
+    font-size: 11px;
+  }
+  .benefits-section__container1__text {
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .benefits-section__container1__heading {
+    font-size: 36px;
+  }
+  .btn {
+    width: 140px;
+    padding: 1rem;
+  }
+  .benefits-section__content__text {
+    width: 300px;
+  }
+  .benefits-section__container2__section1 {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .benefits-section__container1__heading {
+    font-size: 52px;
+    line-height: 80px;
+    font-weight: 500;
+  }
+  .benefits-section__container1__text {
+    font-size: 19px;
+    line-height: 40px;
+  }
+  .benefits-section__content__text {
+    width: 400px;
+    font-size: 18px;
+  }
+  .benefits-section {
+    gap: 6rem;
+  }
+}
