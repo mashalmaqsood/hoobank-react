@@ -27,3 +27,27 @@ export const categories = [
    "https://res.cloudinary.com/dp7hicpjt/image/upload/v1730731029/coinbase_stzpxz.png",
    "https://res.cloudinary.com/dp7hicpjt/image/upload/v1730731033/dropbox_tw3tkc.png"
 ]
+
+export const listItemsOne = ["Content", "How it Works", "Create","Explore","Terms & Services"];
+export const listItemsTwo = ["Help Center", "Partners", "Suggestions","Blog","Newsletters"];
+export const listItemsThree = [ "Our Partner", "Become a Partner"];
+
+
+export const links = [
+    {
+        href: "https://www.instagram.com/explore/locations/106720507792523/algolix-technologies/",
+        src: "https://res.cloudinary.com/dp7hicpjt/image/upload/v1729852867/instagram_ftwd92.svg",
+      },
+    {
+      href: "https://www.facebook.com/algolix/",
+      src: "https://res.cloudinary.com/dp7hicpjt/image/upload/v1729852865/facebook_ujspbq.svg",
+    },
+    {
+      href: "https://x.com/elonmusk",
+      src: "https://res.cloudinary.com/dp7hicpjt/image/upload/v1729852871/twitter_xg60p5.svg",
+    },
+    {
+      href: "https://pk.linkedin.com/company/algolix-technologies",
+      src: "https://res.cloudinary.com/dp7hicpjt/image/upload/v1731061159/linkedin_tmgb4m.png",
+    },
+  ];
