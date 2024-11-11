@@ -21,8 +21,13 @@
   padding: 0.5rem;
   margin-left: 1rem;
   font-size: 12px;
+  margin: 0;
+  color: var(--color-white);
 }
 
+.nav__item > a{
+  color: var(--color-white);
+}
 .icon {
   height: 30px;
   width: 30px;
@@ -36,9 +41,16 @@
 .nav__brand {
   display: flex;
   align-items: center;
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 
+.nav__brand__image{
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+}
 @media screen and (min-width: 768px) {
   .nav {
     padding: 0 1rem;
@@ -53,3 +65,21 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .nav__brand {
+    margin-left: 4rem;
+  }
+}
+
+
+@media screen and (min-width: 2560px) {
+  .nav__item {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .nav__brand__image{
+    width: 200px;
+  }
+}
+

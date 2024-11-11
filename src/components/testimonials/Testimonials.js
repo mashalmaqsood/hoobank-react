@@ -3,7 +3,7 @@ import { testimonials } from "../../lov/data";
 
 const Testimonials = () => {
   return (
-    <section className="testimonials-section">
+    <section id="about-us" className="testimonials-section">
       <div className="testimonials-section__content grid">
         <h1 className="testimonials-section__heading">
           What people are saying about us

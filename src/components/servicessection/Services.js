@@ -1,9 +1,18 @@
+import { useState } from "react";
+import Form from "../form/Form";
 import "./Services.css";
 
-const Services = () => {
+const Services = ({handleForm}) => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const toggleForm = (formOpen) => {
+    setIsFormOpen(formOpen);
+    handleForm(formOpen);
+  };
+
   return (
     <>
-      <section className="services-section--one grid">
+      <section id="services-section" className="services-section--one grid">
         <article className="services-section__image-container">
           <img
             className="services-section__image-container__image"
@@ -34,7 +43,7 @@ const Services = () => {
           <p className="services-section__text">
           Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
           </p>
-          <button className="btn">Get Started</button>
+          <button className="btn" onClick={()=> toggleForm(true)}>Get Started</button>
         </article>
         <article className="services-section__image-container">
           <img
@@ -44,6 +53,12 @@ const Services = () => {
           />
         </article>
       </section>
+      {isFormOpen && (
+        <>
+          <div className="overlay"></div>
+          <Form setIsFormOpen={setIsFormOpen} toggleForm={toggleForm} />
+        </>
+      )}
     </>
   );
 };

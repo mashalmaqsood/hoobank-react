@@ -1,6 +1,17 @@
+import { useState } from "react";
+import Form from "../form/Form";
 import "./Hero.css";
 
-const Hero = () => {
+const Hero = ({handleForm}) => {
+
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const toggleForm = (formOpen) => {
+    setIsFormOpen(formOpen);
+    handleForm(formOpen);
+  };
+
+
   return (
     <>
       <section className="hero-section grid">
@@ -11,7 +22,7 @@ const Hero = () => {
               width={20}
               alt="discount"
             />
-            <span>20% DISCOUNT FOR 1 MONTH ACCOUNT</span>
+            <span className="hero-section__content__tag__text">20% <span className="hero-section__content__tag--highlight">DISCOUNT FOR </span>1 MONTH <span className="hero-section__content__tag--highlight">ACCOUNT</span></span>
           </div>
           <div className="hero-section__content__header">
             <h1 className="hero-section__content__heading">
@@ -25,6 +36,7 @@ const Hero = () => {
               className="hero-section__content__image"
               src="https://res.cloudinary.com/dp7hicpjt/image/upload/v1730377110/getstarted_sowqd8.png"
               alt="Get started"
+              onClick={()=> toggleForm(true)}
             />
           </div>
           <p className="hero-section__content__text">
@@ -41,7 +53,7 @@ const Hero = () => {
           />
         </article>
       </section>
-      <div className="hero-section__content3">
+      <section className="hero-section__content3">
         <div className="hero-section__content3__heading">
           <span className="hero-section__content3__heading1">3800+</span>
           <span className="hero-section__content3__tag">User Active</span>
@@ -58,7 +70,13 @@ const Hero = () => {
           <span className="hero-section__content3__heading1">$230M+</span>
           <span className="hero-section__content3__tag">TRANSACTION</span>
         </div>
-      </div>
+      </section>
+      {isFormOpen && (
+        <>
+          <div className="overlay"></div>
+          <Form setIsFormOpen={setIsFormOpen} toggleForm={toggleForm} />
+        </>
+      )}
     </>
   );
 };
