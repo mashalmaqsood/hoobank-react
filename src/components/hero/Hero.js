@@ -1,9 +1,8 @@
 import { heroSectionList } from "../../lov/data";
 import { useTranslation } from "react-i18next";
-// import "../../i18n";
 import "./Hero.css";
 
-const Hero = ({ handleForm, setFormOpen, setLanguage }) => {
+const Hero = ({ handleForm, setFormOpen}) => {
   const { t } = useTranslation();
   return (
     <>
@@ -29,10 +28,10 @@ const Hero = ({ handleForm, setFormOpen, setLanguage }) => {
           </div>
           <div className="hero-section__content__header">
             <h1 className="hero-section__content__heading">
-              The 
+              The
               {t("next")}
               <span className="hero-section__content__heading__highlight">
-                {t("generation")}
+                {t("generation")} 
               </span>{" "}
               {t("paymentMethod")}
             </h1>
@@ -46,9 +45,7 @@ const Hero = ({ handleForm, setFormOpen, setLanguage }) => {
               }}
             />
           </div>
-          <p className="hero-section__content__text">
-            {t("heroText")}
-          </p>
+          <p className="hero-section__content__text">{t("heroText")}</p>
         </article>
         <article className="hero-section__content2">
           <img

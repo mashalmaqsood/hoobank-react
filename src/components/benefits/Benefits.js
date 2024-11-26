@@ -7,13 +7,9 @@ const Benefits = ({ handleForm, setFormOpen }) => {
     <section id="benefits-section" className="benefits-section grid">
       <article className="benefits-section__container1">
         <h1 className="benefits-section__container1__heading">
-          {/* You do the business, we’ll handle the money. */}
           {t("benefitsHeading")}
         </h1>
         <p className="benefits-section__container1__text">
-          {/* With the right credit card, you can improve your financial life by
-          building credit, earning rewards and saving money. But with hundreds
-          of credit cards on the market. */}
           {t("benefitsText")}
         </p>
         <button
@@ -23,7 +19,6 @@ const Benefits = ({ handleForm, setFormOpen }) => {
             setFormOpen(true);
           }}
         >
-          {/* Get Started */}
           {t("getStarted")}
         </button>
       </article>
@@ -37,8 +32,6 @@ const Benefits = ({ handleForm, setFormOpen }) => {
           <div className="benefits-section__content">
             <h3 className="benefits-section__content__heading">{t("rewards")}</h3>
             <p className="benefits-section__content__text">
-              {/* The best credit cards offer some tantalizing combinations of
-              promotions and prizes */}
               {t("rewardsText")}
             </p>
           </div>
@@ -52,8 +45,6 @@ const Benefits = ({ handleForm, setFormOpen }) => {
           <div className="benefits-section__content">
             <h3 className="benefits-section__content__heading">{t("secured")}</h3>
             <p className="benefits-section__content__text">
-              {/* We take proactive steps make sure your information and
-              transactions are secure. */}
               {t("securedText")}
             </p>
           </div>
@@ -66,12 +57,9 @@ const Benefits = ({ handleForm, setFormOpen }) => {
           />
           <div className="benefits-section__content">
             <h3 className="benefits-section__content__heading">
-              {/* Balance Transfer */}
               {t("balance")}
             </h3>
             <p className="benefits-section__content__text">
-              {/* A balance transfer credit card can save you a lot of money in
-              interest charges. */}
               {t("balanceText")}
             </p>
           </div>

@@ -1,7 +1,9 @@
 import "./Form.css";
+import { useTranslation } from "react-i18next";
 
 const Form = ({ setIsFormOpen, toggleForm }) => {
-
+  const { t } = useTranslation();
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Account created successfully.");
@@ -17,20 +19,21 @@ const Form = ({ setIsFormOpen, toggleForm }) => {
           src="https://res.cloudinary.com/dp7hicpjt/image/upload/v1730360086/logo_ksjh1h.png"
           alt="logo"
         />
-        <h1>Get Started</h1>
-        <p>Welcome to Hoobank - Let's create your account</p>
+        <h1>{t("getStarted")}</h1>
+        <p>{t("formTag")}</p>
       </header>
       <section className="form__container">
-        <input type="email" placeholder="Email" className="input" required />
+        <input type="email" placeholder={t("email")} className="input" required autoComplete="email"/>
         <input
           type="password"
-          placeholder="Password"
+          placeholder={t("password")}
+          autoComplete="current-password"
           className="input"
           required
         />
       </section>
       <button className="btn form-btn" type="submit">
-        Sign up
+        {t("SignUp")}
       </button>
     </form>
   );

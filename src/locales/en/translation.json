@@ -10,7 +10,13 @@
   "next": " Next ",
   "generation": "Generation",
   "heroText": "Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.",
+  "USER ACTIVE": "USER ACTIVE",
+  "TRUSTED BY COMPANY": "TRUSTED BY COMPANY",
+  "TRANSACTION": "TRANSACTION",
   "paymentMethod": "Payment Method",
+  "benefitsHeading": "You do the business, we’ll handle the money. ",
+  "benefitsText": "With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.",
+  "getStarted" : "Get Started",
   "rewards": "Rewards",
   "rewardsText": "The best credit cards offer some tantalizing combinations of promotions and prizes",
   "secured": "100% Secured",
@@ -53,10 +59,10 @@
       "How it Works": "How it Works",
       "Create": "Create",
       "Explore": "Explore",
-      "Terms & Services": "Terms & Services",
-      "Help Center": "Help Center"
+      "Terms & Services": "Terms & Services"
     },
     "listItemsTwo": {
+      "Help Center" : "Help Center",
       "Partners": "Partners",
       "Suggestions": "Suggestions",
       "Blog": "Blog",
@@ -67,5 +73,9 @@
       "Become a Partner": "Become a Partner"
     },
     "copyRight" : "Copyright © 2021 HooBank. All Rights Reserved."
-  }
+  },
+  "formTag" : "Welcome to Hoobank - Let's create your account",
+  "email" : "Email",
+  "password" : "Password",
+  "SignUp" : "Sign up"
 }

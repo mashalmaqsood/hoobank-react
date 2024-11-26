@@ -15,7 +15,6 @@ const Footer = () => {
             alt="logo"
           />
           <p className="footer-section--header__text">
-            {/* A new way to make the payments easy, reliable and secure. */}
             {t("footerHeading")}
           </p>
         </section>
@@ -52,7 +51,6 @@ const Footer = () => {
       </section>
       <section className="footer__content">
         <p className="footer__copyright-notice">
-          {/* Copyright &copy; 2021 HooBank. All Rights Reserved. */}
           {t("footer.copyRight")}
         </p>
         <div className="footer__icons">

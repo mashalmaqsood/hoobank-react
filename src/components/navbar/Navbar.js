@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { navList } from "../../lov/data";
 import { useTranslation } from "react-i18next";
-import "../../i18n";
 import "./Navbar.css";
 
 const Navbar = ({ setLanguage }) => {
