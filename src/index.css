@@ -19,6 +19,7 @@ code {
 :root {
   --color-body: #00040F;
   --color-white: #fff;
+  --color-black : #000;
   --color-primary: linear-gradient(
     157.81deg,
     #def9fa -43.27%,
@@ -33,10 +34,6 @@ code {
 
 .grid{
   display: grid;
-}
-
-.no-scroll {
-  overflow: hidden;
 }
 
 .overlay {
@@ -66,9 +63,13 @@ code {
   margin-top: 1rem;
 }
 
-.wrapper.no-scroll {
+.no-scroll {
   overflow: hidden;
   height: 100vh;
+}
+
+.scroll {
+  overflow-y: auto;
 }
 
 @media screen and (min-width: 1024px) {

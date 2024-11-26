@@ -12,10 +12,6 @@
   margin: 0;
 }
 
-.testimonials-section__text {
-  /* font-size: 14px; */
-}
-
 .testimonials-container {
   display: flex;
   flex-direction: column;

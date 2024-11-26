@@ -1,8 +1,10 @@
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
 import { listItemsOne, listItemsTwo, listItemsThree } from "../../lov/data";
 import { links } from "../../lov/data";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <section className="footer">
       <section className="footer-sections">
@@ -13,35 +15,36 @@ const Footer = () => {
             alt="logo"
           />
           <p className="footer-section--header__text">
-            A new way to make the payments easy, reliable and secure.
+            {/* A new way to make the payments easy, reliable and secure. */}
+            {t("footerHeading")}
           </p>
         </section>
         <ul className="footer-section">
-          <li>Usefull Links</li>
+          <li>{t("footer.Useful Links")}</li>
           <div className="footer-section__list">
             {listItemsOne.map((listItem, index) => (
               <li key={index} className="footer-section__listItem">
-                {listItem}
+                {t(`footer.listItemsOne.${listItem}`)}
               </li>
             ))}
           </div>
         </ul>
         <ul className="footer-section">
-          <li>Community</li>
+          <li>{t("footer.community")}</li>
           <div className="footer-section__list">
             {listItemsTwo.map((listItem, index) => (
               <li key={index} className="footer-section__listItem">
-                {listItem}
+                {t(`footer.listItemsTwo.${listItem}`)}
               </li>
             ))}
           </div>
         </ul>
         <ul className="footer-section">
-          <li>Partner</li>
+          <li>{t("footer.partner")}</li>
           <div className="footer-section__list">
           {listItemsThree.map((listItem, index) => (
             <li key={index} className="footer-section__listItem">
-              {listItem}
+              {t(`footer.listItemsThree.${listItem}`)}
             </li>
           ))}
           </div>
@@ -49,7 +52,8 @@ const Footer = () => {
       </section>
       <section className="footer__content">
         <p className="footer__copyright-notice">
-          Copyright &copy; 2021 HooBank. All Rights Reserved.
+          {/* Copyright &copy; 2021 HooBank. All Rights Reserved. */}
+          {t("footer.copyRight")}
         </p>
         <div className="footer__icons">
           {links.map((link, index) => (

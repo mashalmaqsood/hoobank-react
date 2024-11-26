@@ -12,9 +12,9 @@
   border-radius: 10px;
 }
 
-.hero-section__content__tag__text{
+/* .hero-section__content__tag__text{
   margin-left: 10px;
-}
+} */
 .hero-section__content__tag--highlight{
   color: #A8A8A8;
 }
@@ -220,7 +220,6 @@
     line-height: 40px;
   }
 }
-
 
 @media screen and (min-width: 2560px) {
   .hero-section__content__heading {

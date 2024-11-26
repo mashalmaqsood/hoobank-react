@@ -1,8 +1,16 @@
 import { useState } from "react";
+import { navList } from "../../lov/data";
+import { useTranslation } from "react-i18next";
+import "../../i18n";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ setLanguage }) => {
+  const { t } = useTranslation();
   const [isMenuOppen, setIsMenuOpen] = useState(false);
+
+  const handleLanguageChange = (e) => {
+    setLanguage(e.target.value);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -24,18 +32,24 @@ const Navbar = () => {
         onClick={toggleMenu}
       />
       <ul className={`list nav__list ${isMenuOppen ? "show" : ""}`}>
-        <li className="nav__item">
-          <a href="/">Home</a>
-        </li>
-        <li className="nav__item">
-        <a href="#about-us">About Us</a>
-     </li>
-        <li className="nav__item">
-        <a href="#services-section">Features</a>
-        </li>
-        <li className="nav__item">
-        <a href="#benefits-section">Solution</a>
-        </li>
+        {navList.map((navItem, index) => (
+          <li className="nav__item" key={index}>
+            <a href={navItem.href}>{t(navItem.name)}</a>
+          </li>
+        ))}
+        <select
+          className="select-input"
+          required
+          onChange={handleLanguageChange}
+        >
+          <option value="en">English</option>
+          <option value="ur">Urdu</option>
+          <option value="it">Italian</option>
+          <option value="es">Spanish</option>
+          <option value="de">German</option>
+          <option value="tr">Turkish</option>
+          <option value="ar">Arabic</option>
+        </select>
       </ul>
     </section>
   );
